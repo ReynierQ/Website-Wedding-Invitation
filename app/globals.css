@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Playfair+Display:ital,wght@0,700;1,400&family=Raleway:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+:root {
+  --cream: #f5f0eb;
+  --dark-green: #4a6741;
+  --mid-green: #5c7a52;
+  --deep-red: #8b1a2a;
+  --wax-red: #9b2335;
+  --gold: #c9a84c;
+  --text-dark: #2c1810;
+  --text-mid: #5c3d2e;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; overflow: hidden; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulseSeal {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.07); }
+}
+@keyframes blinkSep {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 0.15; }
+}
+
+.animate-blink { animation: blinkSep 1s step-end infinite; }
+
+.hashtag-label {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.9rem;
+  color: var(--deep-red);
+  letter-spacing: 0.05em;
+  z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .hashtag-label {
+    top: 180px;
+  }
+}
