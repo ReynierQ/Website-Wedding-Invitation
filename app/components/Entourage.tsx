@@ -73,12 +73,12 @@ export default function MoreInfoPage({ onBack }: Props) {
         <motion.div
           {...fadeUp(0.1)}
           style={{
-            width: 300,
-            height: 200,
+            width: 250,
+            height: 150,
             position: "relative",
             marginTop: 20,
-            marginBottom: -80,
-            marginLeft: 90,
+            marginBottom: -60,
+            marginLeft: 70,
             filter: "drop-shadow(0 6px 18px rgba(74,103,65,0.25))",
           }}
         >
