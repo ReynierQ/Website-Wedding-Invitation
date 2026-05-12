@@ -54,7 +54,7 @@ export default function LandingPage({ onOpen }: Props) {
           transition={{ duration: 0.9, delay: 0.1 }}
           style={{
             fontFamily: "'Playfair Display', serif",
-            fontSize: "clamp(2rem, 6vw, 3.2rem)",
+            fontSize: "clamp(1.5rem, 6vw, 3.2rem)",
             fontWeight: 700,
             color: "var(--deep-red)",
             letterSpacing: "0.04em",
