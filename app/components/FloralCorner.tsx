@@ -5,7 +5,7 @@ type FloralCornerProps = {
 };
 
 const positions: Record<string, React.CSSProperties> = {
-  tl: { top: -60, left: -60 },
+  tl: { top: -80, left: -80 },
   tr: { top: -8, right: -8 },
   bl: { bottom: -8, left: -8 },
   br: { bottom: -20, right: -50 },
@@ -19,8 +19,8 @@ export default function FloralCorner({ position }: FloralCornerProps) {
       style={{
         position: "absolute",
         ...positions[position],
-        width: 300,
-        height: 300,
+        width: 280,
+        height: 280,
         pointerEvents: "none",
         zIndex: 0,
         transform: position === "br" ? "scale(-1, -1)" : undefined,

@@ -60,7 +60,7 @@ export default function LandingPage({ onOpen }: Props) {
             letterSpacing: "0.04em",
             lineHeight: 1.15,
             marginBottom: -40,
-            marginTop: -25,
+            marginTop: -30,
             textTransform: "uppercase",
           }}
         >
