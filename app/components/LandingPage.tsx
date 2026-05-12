@@ -54,13 +54,13 @@ export default function LandingPage({ onOpen }: Props) {
           transition={{ duration: 0.9, delay: 0.1 }}
           style={{
             fontFamily: "'Playfair Display', serif",
-            fontSize: "clamp(1.5rem, 6vw, 3.2rem)",
+            fontSize: "clamp(1.3rem, 5vw, 3.2rem)",
             fontWeight: 700,
             color: "var(--deep-red)",
             letterSpacing: "0.04em",
             lineHeight: 1.15,
             marginBottom: -40,
-            marginTop: -30,
+            marginTop: -25,
             textTransform: "uppercase",
           }}
         >

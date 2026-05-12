@@ -41,11 +41,11 @@ html, body { height: 100%; overflow: hidden; }
   color: var(--deep-red);
   letter-spacing: 0.05em;
   z-index: 2;
-  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 768px) {
   .hashtag-label {
-    top: 170px;
+    top: 160px;
+    margin-bottom: 20px;
   }
 }
