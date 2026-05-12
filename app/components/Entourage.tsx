@@ -78,8 +78,9 @@ export default function MoreInfoPage({ onBack }: Props) {
             position: "relative",
             marginTop: 20,
             marginBottom: -60,
-            marginLeft: 70,
+            marginLeft: "clamp(0px, 10vw, 60px)",
             filter: "drop-shadow(0 6px 18px rgba(74,103,65,0.25))",
+            overflow: "hidden",
           }}
         >
           <Image
