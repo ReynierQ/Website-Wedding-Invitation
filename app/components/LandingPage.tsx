@@ -59,8 +59,8 @@ export default function LandingPage({ onOpen }: Props) {
             color: "var(--deep-red)",
             letterSpacing: "0.04em",
             lineHeight: 1.15,
-            marginBottom: -25,
-            marginTop: -20,
+            marginBottom: -35,
+            marginTop: -1,
             textTransform: "uppercase",
           }}
         >

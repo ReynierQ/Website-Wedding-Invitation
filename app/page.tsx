@@ -19,10 +19,21 @@ export default function Home() {
  const startMusic = () => {
     if (!audioRef.current) {
       audioRef.current = new Audio("/assets/Bruno Mars - Risk It All.mp3");
-      audioRef.current.loop = true;
+      audioRef.current.loop = true; // ← turn off loop if you want it to stop
       audioRef.current.volume = 0.4;
-      audioRef.current.currentTime = 2; // ← set start time in seconds
+      audioRef.current.currentTime = 66; // start at 1:06
+
+      // Stop at a specific time — e.g. 3:30 = 210 seconds
+      audioRef.current.addEventListener("timeupdate", () => {
+        if (!audioRef.current) return;
+        if (audioRef.current.currentTime >= 210) { // ← set your end time here
+          audioRef.current.pause();
+          audioRef.current.currentTime = 66; // loop back to start time
+          audioRef.current.play().catch(() => {});
+        }
+      });
     }
+    
     // Must call play() directly inside the user gesture handler for iOS
     audioRef.current.play().catch(() => {});
     setMusicStarted(true);

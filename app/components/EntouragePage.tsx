@@ -220,7 +220,7 @@ export default function EntourageoPage({ onBack, onNext }: Props) {
                 Ms. Gellanie Sabucor<br />
                 Ms. Aj Praise Tribdino<br />
                 Ms. Coleen Samson<br />
-                Ms. Princess Noreen Tribdino<br />
+                Ms. Noreen Tribdino<br />
                 Ms. Cheska Tribdino
               </p>
             </div>
