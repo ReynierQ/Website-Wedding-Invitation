@@ -174,6 +174,9 @@ export default function WeddingRulesPage({ onBack, onNext }: Props) {
               border: "none",
               cursor: "pointer",
               boxShadow: "0 4px 14px rgba(139,26,42,0.3)",
+              marginTop: 5,
+              marginBottom: 2,
+              marginRight: 3,
             }}
           >
             ← Back
@@ -193,6 +196,9 @@ export default function WeddingRulesPage({ onBack, onNext }: Props) {
               border: "none",
               cursor: "pointer",
               boxShadow: "0 4px 14px rgba(139,26,42,0.3)",
+              marginTop: 5,
+              marginBottom: 2,
+              marginLeft: 3,
             }}
           >
             Next →
