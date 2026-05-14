@@ -120,7 +120,7 @@ export default function EntourageoPage({ onBack, onNext }: Props) {
             background: "var(--cream)", 
             border: "1.5px solid rgba(139,26,42,0.15)",
             borderRadius: 6,
-            marginBottom: 80,
+            marginBottom: 50,
           }}
         >
 
@@ -267,6 +267,7 @@ export default function EntourageoPage({ onBack, onNext }: Props) {
                 boxShadow: "0 4px 14px rgba(139,26,42,0.3)",
                 marginTop: 20,
                 marginBottom: 0,
+                marginRight: 3,  
               }}
             >
               ← Back
@@ -281,11 +282,14 @@ export default function EntourageoPage({ onBack, onNext }: Props) {
                 fontWeight: 500,
                 letterSpacing: "0.2em",
                 textTransform: "uppercase",
-                padding: "10px 24px",
+                padding: "10px 28px",
                 borderRadius: 3,
                 border: "none",
                 cursor: "pointer",
                 boxShadow: "0 4px 14px rgba(139,26,42,0.3)",
+                marginTop: 20,
+                marginBottom: 0,
+                marginLeft: 3, 
               }}
             >
               Next →
