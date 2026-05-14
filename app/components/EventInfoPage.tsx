@@ -49,7 +49,10 @@ export default function EventInfoPage({ onBack }: Props) {
           zIndex: 2,
           overflowY: "auto",
           flex: 1,
-          padding: "32px 28px 16px",
+          marginTop: "5vh",
+          marginBottom: 100,
+          marginLeft: "4vw",
+          marginRight: "4vw",
         }}
       >
         {/* Title */}
@@ -225,7 +228,6 @@ export default function EventInfoPage({ onBack }: Props) {
             display: "flex",
             justifyContent: "center",
             padding: "12px 24px 24px",
-            background: "linear-gradient(to top, var(--cream) 70%, transparent)",
           }}
         >
           <button

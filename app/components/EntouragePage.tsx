@@ -67,6 +67,7 @@ export default function EntourageoPage({ onBack, onNext }: Props) {
           overflowY: "auto",
           flex: 1,
           padding: "0 24px 40px",
+          marginBottom: 30,
         }}
       >
         {/* Header */}

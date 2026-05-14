@@ -73,7 +73,10 @@ export default function WeddingRulesPage({ onBack, onNext }: Props) {
           zIndex: 2,
           overflowY: "auto",
           flex: 1,
-          margin: "5vh 3vw 5vh",
+          marginTop: "5vh",
+          marginBottom: 100,
+          marginLeft: "4vw",
+          marginRight: "4vw",
           background: "var(--cream)",
         }}
       >

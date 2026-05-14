@@ -47,7 +47,8 @@ export default function DressCodePage({ onBack, onNext }: Props) {
           zIndex: 2,
           overflowY: "auto",
           flex: 1,
-          margin: "5vh 3vw 5vh",
+          marginTop: "5vh",
+          marginBottom: 100,
           padding: "0px 20px",
           background: "var(--cream)",
         }}

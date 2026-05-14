@@ -14,49 +14,28 @@ export default function Home() {
   const [page, setPage] = useState<Page>("landing");
   const [musicStarted, setMusicStarted] = useState(false);
   const [muted, setMuted] = useState(false);
-  const iframeRef = useRef<HTMLIFrameElement | null>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  const startMusic = () => {
+ const startMusic = () => {
+    if (!audioRef.current) {
+      audioRef.current = new Audio("/assets/Bruno Mars - Risk It All.mp3");
+      audioRef.current.loop = true;
+      audioRef.current.volume = 0.4;
+      audioRef.current.currentTime = 2; // ← set start time in seconds
+    }
+    // Must call play() directly inside the user gesture handler for iOS
+    audioRef.current.play().catch(() => {});
     setMusicStarted(true);
   };
 
   const toggleMute = () => {
-    if (!iframeRef.current) return;
-    // Post message to YouTube iframe player API
-    const command = muted ? "unMute" : "mute";
-    iframeRef.current.contentWindow?.postMessage(
-      JSON.stringify({ event: "command", func: command, args: [] }),
-      "*"
-    );
+    if (!audioRef.current) return;
+    audioRef.current.muted = !muted;
     setMuted(!muted);
   };
 
-  // Replace YOUR_VIDEO_ID with the YouTube video ID
-  // e.g. for https://www.youtube.com/watch?v=abc123 → use abc123
-  const YT_VIDEO_ID = "nNJkh92SwUk";
-  const YT_START_SECONDS = 2;
-
   return (
     <div style={{ position: "relative", width: "100vw", height: "100vh", overflow: "hidden" }}>
-
-       {/* Hidden YouTube iframe — only renders after seal is clicked */}
-      {musicStarted && (
-        <iframe
-          ref={iframeRef}
-          src={`https://www.youtube.com/embed/${YT_VIDEO_ID}?autoplay=1&loop=1&playlist=${YT_VIDEO_ID}&controls=0&enablejsapi=1&start=${YT_START_SECONDS}`}
-          allow="autoplay"
-          style={{
-            position: "fixed",
-            width: 1,
-            height: 1,
-            bottom: 0,
-            left: 0,
-            opacity: 0,
-            pointerEvents: "none",
-            border: "none",
-          }}
-        />
-      )}
 
       <AnimatePresence mode="wait">
         {page === "landing" && (
