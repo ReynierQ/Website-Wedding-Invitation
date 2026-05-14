@@ -155,7 +155,7 @@ export default function EntourageoPage({ onBack, onNext }: Props) {
               <p style={sectionTitle}>Principal</p>
               <p style={scriptStyle}>
                 Ms. Angela Poblete<br />
-                Ms. Theva Tribdino<br />
+                Ms. Thera Tribdino<br />
                 Ms. Jhong Sales<br />
                 Ms. Cristina Bernardo<br />
                 Mrs. Rose Poblete<br />
@@ -216,7 +216,7 @@ export default function EntourageoPage({ onBack, onNext }: Props) {
                 Mrs. Kristine Tribdino<br />
                 Ms. Eliza Dela Pea<br />
                 Ms. Agatha Arayata<br />
-                Ms. Gellanie Celine Subacer<br />
+                Ms. Gellanie Sabucor<br />
                 Ms. Aj Praise Tribdino<br />
                 Ms. Coleen Samson<br />
                 Ms. Princess Noreen Tribdino<br />

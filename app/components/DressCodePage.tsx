@@ -9,9 +9,9 @@ const fadeUp = (delay = 0) => ({
   transition: { duration: 0.7, delay },
 });
 
-type Props = { onBack: () => void };
+type Props = { onBack: () => void; onNext: () => void };
 
-export default function DressCodePage({ onBack }: Props) {
+export default function DressCodePage({ onBack, onNext }: Props) {
   return (
     <div
       style={{
@@ -47,7 +47,7 @@ export default function DressCodePage({ onBack }: Props) {
           zIndex: 2,
           overflowY: "auto",
           flex: 1,
-          margin: "5vh 3vw 2vh",
+          margin: "5vh 3vw 5vh",
           padding: "0px 20px",
           background: "var(--cream)",
         }}
@@ -202,40 +202,66 @@ export default function DressCodePage({ onBack }: Props) {
             Guests are welcome to wear any outfit, as long as it harmonizes with the wedding theme.
           </p>
         </motion.div>
-      </div>
 
-      {/* Back button */}
-      <motion.div
-        {...fadeUp(0.4)}
-        style={{
-          position: "relative",
-          zIndex: 3,
-          display: "flex",
-          justifyContent: "center",
-          padding: "12px 24px 24px",
-          background: "linear-gradient(to top, var(--cream) 70%, transparent)",
-        }}
-      >
-        <button
-          onClick={onBack}
-          style={{
-            background: "var(--deep-red)",
-            color: "white",
-            fontFamily: "'Raleway', sans-serif",
-            fontSize: "0.7rem",
-            fontWeight: 500,
-            letterSpacing: "0.2em",
-            textTransform: "uppercase",
-            padding: "10px 28px",
-            borderRadius: 3,
-            border: "none",
-            cursor: "pointer",
-            boxShadow: "0 4px 14px rgba(139,26,42,0.3)",
-          }}
+        
+        {/* Back button */}
+        <motion.div
+            {...fadeUp(0.4)}
+            style={{
+            position: "relative",
+            zIndex: 3,
+            display: "flex",
+            justifyContent: "center",
+            padding: "12px 24px 24px",
+            background: "linear-gradient(to top, var(--cream) 70%, transparent)",
+            }}
         >
-          ← Back
-        </button>
-      </motion.div>
+            <button
+                onClick={onBack}
+                style={{
+                    background: "var(--deep-red)",
+                    color: "white",
+                    fontFamily: "'Raleway', sans-serif",
+                    fontSize: "0.7rem",
+                    fontWeight: 500,
+                    letterSpacing: "0.2em",
+                    textTransform: "uppercase",
+                    padding: "10px 28px",
+                    borderRadius: 3,
+                    border: "none",
+                    cursor: "pointer",
+                    boxShadow: "0 4px 14px rgba(139,26,42,0.3)",
+                    marginTop: 5,
+                    marginBottom: 2,
+                    marginRight: 3, 
+                }}
+                >
+                    ← Back
+            </button>
+            <button
+                onClick={onNext}
+                style={{
+                    background: "var(--deep-red)",
+                    color: "white",
+                    fontFamily: "'Raleway', sans-serif",
+                    fontSize: "0.7rem",
+                    fontWeight: 500,
+                    letterSpacing: "0.2em",
+                    textTransform: "uppercase",
+                    padding: "10px 24px",
+                    borderRadius: 3,
+                    border: "none",
+                    cursor: "pointer",
+                    boxShadow: "0 4px 14px rgba(139,26,42,0.3)",
+                    marginTop: 5,
+                    marginBottom: 2,
+                    marginLeft: 3, 
+                }}
+                >
+                    Next →
+            </button>
+        </motion.div>
+      </div>
     </div>
   );
 }
