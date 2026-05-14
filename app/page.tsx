@@ -3,9 +3,10 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import LandingPage from "./components/LandingPage";
 import InvitationPage from "./components/InvitationPage";
-import Entourage from "./components/Entourage";
+import EntouragePage from "./components/EntouragePage";
+import DressCodePage from "./components/DressCodePage";
 
-type Page = "landing" | "invitation" | "entourage";
+type Page = "landing" | "invitation" | "entourage" | "dresscode";
 
 export default function Home() {
   const [page, setPage] = useState<Page>("landing");
@@ -47,9 +48,26 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             style={{ position: "absolute", inset: 0 }}
           >
-            <Entourage onBack={() => setPage("invitation")} />
+            <EntouragePage 
+              onBack={() => setPage("invitation")}
+              onNext={() => setPage("dresscode")}
+             />
           </motion.div>
         )}
+
+        {page === "dresscode" && (
+          <motion.div
+            key="dresscode"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 30 }}
+            transition={{ duration: 0.6 }}
+            style={{ position: "absolute", inset: 0 }}
+          >
+            <DressCodePage onBack={() => setPage("entourage")} />
+          </motion.div>
+        )}
+
       </AnimatePresence>
     </div>
   );

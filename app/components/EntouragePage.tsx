@@ -28,9 +28,9 @@ const sectionTitle: React.CSSProperties = {
   marginTop: 10,
 };
 
-type Props = { onBack: () => void };
+type Props = { onBack: () => void; onNext: () => void };
 
-export default function MoreInfoPage({ onBack }: Props) {
+export default function EntourageoPage({ onBack, onNext }: Props) {
   return (
     <div
       style={{
@@ -270,6 +270,25 @@ export default function MoreInfoPage({ onBack }: Props) {
               }}
             >
               ← Back
+            </button>
+            <button
+              onClick={onNext}
+              style={{
+                background: "var(--deep-red)",
+                color: "white",
+                fontFamily: "'Raleway', sans-serif",
+                fontSize: "0.7rem",
+                fontWeight: 500,
+                letterSpacing: "0.2em",
+                textTransform: "uppercase",
+                padding: "10px 24px",
+                borderRadius: 3,
+                border: "none",
+                cursor: "pointer",
+                boxShadow: "0 4px 14px rgba(139,26,42,0.3)",
+              }}
+            >
+              Next →
             </button>
           </motion.div>
         </motion.div>
