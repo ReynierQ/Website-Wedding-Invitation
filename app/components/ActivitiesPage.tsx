@@ -170,18 +170,18 @@ export default function ActivitiesPage({ onBack, onRsvp }: Props) {
         {/* RSVP section */}
         <motion.div
           {...fadeUp(0.7)}
-          style={{ marginTop: -20, marginBottom: -20 }}
+          style={{ marginTop: 20, marginBottom: 20 }}
         >
           {/* PUT RSVP IMAGE HERE */}
             <div
               onClick={onRsvp}
-              style={{ cursor: "pointer", width: 240, margin: "0 auto" }}
+              style={{ cursor: "pointer", width: 240, margin: "2vh 0 2vh 23vw" }}
             >
               <Image
-                src="/assets/rsvp-button.png"
+                src="/assets/rsvp-button1.png"
                 alt="RSVP Click Here"
-                width={240}
-                height={200}
+                width={160}
+                height={140}
                 style={{ objectFit: "contain" }}
               />
             </div>
@@ -193,49 +193,52 @@ export default function ActivitiesPage({ onBack, onRsvp }: Props) {
               color: "var(--text-mid)",
               textAlign: "center",
               lineHeight: 1.7,
-              marginTop: 12,
+              marginTop: -12,
               letterSpacing: "0.03em",
               textTransform: "uppercase",
               maxWidth: 280,
               margin: "12px auto 0",
+              background: "var(--cream)",
             }}
           >
             Kindly confirm your attendance by signing the RSVP on or before August 1, 2026. Only confirmed guests will be accommodated.
           </p>
         </motion.div>
-      </div>
 
-      {/* Back button */}
-      <motion.div
-        {...fadeUp(0.5)}
-        style={{
-          position: "relative",
-          zIndex: 3,
-          display: "flex",
-          justifyContent: "center",
-          padding: "12px 24px 24px",
-          background: "linear-gradient(to top, var(--cream) 70%, transparent)",
-        }}
-      >
-        <button
-          onClick={onBack}
+        {/* Back button */}
+        <motion.div
+          {...fadeUp(0.5)}
           style={{
-            background: "transparent",
-            color: "var(--deep-red)",
-            fontFamily: "'Raleway', sans-serif",
-            fontSize: "0.7rem",
-            fontWeight: 500,
-            letterSpacing: "0.2em",
-            textTransform: "uppercase",
-            padding: "10px 28px",
-            borderRadius: 3,
-            border: "1.5px solid var(--deep-red)",
-            cursor: "pointer",
+            position: "relative",
+            zIndex: 3,
+            display: "flex",
+            justifyContent: "center",
+            padding: "12px 24px 24px",
+            // background: "linear-gradient(to top, var(--cream) 70%, transparent)",
           }}
         >
-          ← Back
-        </button>
-      </motion.div>
+          <button
+            onClick={onBack}
+            style={{
+              background: "var(--deep-red)",
+              color: "white",
+              fontFamily: "'Raleway', sans-serif",
+              fontSize: "0.7rem",
+              fontWeight: 500,
+              letterSpacing: "0.2em",
+              textTransform: "uppercase",
+              padding: "10px 28px",
+              borderRadius: 3,
+              border: "1.5px solid var(--deep-red)",
+              cursor: "pointer",
+              marginTop: -10,
+              marginBottom: 30,
+            }}
+          >
+            ← Back
+          </button>
+        </motion.div>
+      </div>
     </div>
   );
 }

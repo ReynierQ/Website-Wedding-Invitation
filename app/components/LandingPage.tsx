@@ -49,20 +49,10 @@ export default function LandingPage({ onOpen }: Props) {
         }}
       >
         <motion.h1
+          className="landing-title"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.1 }}
-          style={{
-            fontFamily: "'Playfair Display', serif",
-            fontSize: "clamp(1.3rem, 5vw, 3.2rem)",
-            fontWeight: 700,
-            color: "var(--deep-red)",
-            letterSpacing: "0.04em",
-            lineHeight: 1.15,
-            marginBottom: -35,
-            marginTop: -1,
-            textTransform: "uppercase",
-          }}
         >
           Be Part of Our
           <br />

@@ -49,3 +49,58 @@ html, body { height: 100%; overflow: hidden; }
     margin-bottom: 20px;
   }
 }
+
+.landing-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: var(--deep-red);
+  letter-spacing: 0.04em;
+  line-height: 1.15;
+  text-transform: uppercase;
+  margin-bottom: -35px;
+  margin-top: -1px;
+  font-size: 1.6rem;
+}
+
+.hashtag-label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--deep-red);
+  letter-spacing: 0.05em;
+  z-index: 2;
+  bottom: 20px;
+  font-size: 0.7rem;
+}
+
+/* Small phones */
+@media (min-width: 375px) {
+  .landing-title { font-size: 1.8rem; }
+  .hashtag-label { font-size: 0.75rem; }
+}
+
+/* Normal phones */
+@media (min-width: 430px) {
+  .landing-title { font-size: 2rem; }
+  .hashtag-label { font-size: 0.8rem; }
+}
+
+/* Large phones / small tablets */
+@media (min-width: 600px) {
+  .landing-title { font-size: 2.4rem; }
+  .hashtag-label { font-size: 0.9rem; }
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+  .landing-title { font-size: 2.8rem; }
+  .hashtag-label { font-size: 1rem; }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .landing-title { font-size: 3.2rem; }
+  .hashtag-label { font-size: 1.1rem; }
+}
