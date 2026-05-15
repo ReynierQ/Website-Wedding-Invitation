@@ -7,8 +7,10 @@ import EntouragePage from "./components/EntouragePage";
 import DressCodePage from "./components/DressCodePage";
 import WeddingRulesPage from "./components/WeddingRulesPage";
 import EventInfoPage from "./components/EventInfoPage";
+import ActivitiesPage from "./components/ActivitiesPage";
+import RsvpPage from "./components/RsvpPage";
 
-type Page = "landing" | "invitation" | "entourage" | "dresscode" | "weddingrules" | "eventinfo";
+type Page = "landing" | "invitation" | "entourage" | "dresscode" | "weddingrules" | "eventinfo" | "activities" | "rsvp";
 
 export default function Home() {
   const [page, setPage] = useState<Page>("landing");
@@ -110,8 +112,18 @@ export default function Home() {
         )}
 
         {page === "eventinfo" && (
-          <motion.div key="eventinfo" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 30 }} transition={{ duration: 0.6 }} style={{ position: "absolute", inset: 0 }}>
-            <EventInfoPage onBack={() => setPage("weddingrules")} />
+          <motion.div key="eventinfo" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -30 }} transition={{ duration: 0.6 }} style={{ position: "absolute", inset: 0 }}>
+            <EventInfoPage onBack={() => setPage("weddingrules")} onNext={() => setPage("activities")} />
+          </motion.div>
+        )}
+        {page === "activities" && (
+          <motion.div key="activities" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -30 }} transition={{ duration: 0.6 }} style={{ position: "absolute", inset: 0 }}>
+            <ActivitiesPage onBack={() => setPage("eventinfo")} onRsvp={() => setPage("rsvp")} />
+          </motion.div>
+        )}
+        {page === "rsvp" && (
+          <motion.div key="rsvp" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 30 }} transition={{ duration: 0.6 }} style={{ position: "absolute", inset: 0 }}>
+            <RsvpPage onBack={() => setPage("activities")} />
           </motion.div>
         )}
 

@@ -11,9 +11,9 @@ const fadeUp = (delay = 0) => ({
 
 const GOOGLE_MAPS_URL = "https://maps.google.com/?q=Lancaster+Hotel+Manila+622+Shaw+Blvd+Mandaluyong+City";
 
-type Props = { onBack: () => void };
+type Props = { onBack: () => void; onNext: () => void };
 
-export default function EventInfoPage({ onBack }: Props) {
+export default function EventInfoPage({ onBack, onNext }: Props) {
   return (
     <div
       style={{
@@ -247,10 +247,32 @@ export default function EventInfoPage({ onBack }: Props) {
               boxShadow: "0 4px 14px rgba(139,26,42,0.3)",
               marginTop: 50,
               marginBottom: 2,
-              // marginRight: 3,
+              marginRight: 3,
             }}
           >
             ← Back
+          </button>
+          <button
+            onClick={onNext}
+            style={{
+              background: "var(--deep-red)",
+              color: "white",
+              fontFamily: "'Raleway', sans-serif",
+              fontSize: "0.7rem",
+              fontWeight: 500,
+              letterSpacing: "0.2em",
+              textTransform: "uppercase",
+              padding: "10px 28px",
+              borderRadius: 3,
+              border: "none",
+              cursor: "pointer",
+              boxShadow: "0 4px 14px rgba(139,26,42,0.3)",
+              marginTop: 50,
+              marginBottom: 2,
+              marginLeft: 3,
+            }}
+          >
+            Next →
           </button>
         </motion.div>
       </div>
