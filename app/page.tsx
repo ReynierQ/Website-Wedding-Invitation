@@ -101,24 +101,25 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             style={{ position: "absolute", inset: 0 }}
           >
-            <DressCodePage onBack={() => setPage("entourage")} onNext={() => setPage("weddingrules")} />
-          </motion.div>
-        )}
-
-        {page === "weddingrules" && (
-          <motion.div key="weddingrules" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 30 }} transition={{ duration: 0.6 }} style={{ position: "absolute", inset: 0 }}>
-            <WeddingRulesPage onBack={() => setPage("dresscode")} onNext={() => setPage("eventinfo")} />
+            <DressCodePage onBack={() => setPage("entourage")} onNext={() => setPage("eventinfo")} />
           </motion.div>
         )}
 
         {page === "eventinfo" && (
           <motion.div key="eventinfo" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -30 }} transition={{ duration: 0.6 }} style={{ position: "absolute", inset: 0 }}>
-            <EventInfoPage onBack={() => setPage("weddingrules")} onNext={() => setPage("activities")} />
+            <EventInfoPage onBack={() => setPage("dresscode")} onNext={() => setPage("weddingrules")} />
           </motion.div>
         )}
+
+        {page === "weddingrules" && (
+          <motion.div key="weddingrules" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 30 }} transition={{ duration: 0.6 }} style={{ position: "absolute", inset: 0 }}>
+            <WeddingRulesPage onBack={() => setPage("eventinfo")} onNext={() => setPage("activities")} />
+          </motion.div>
+        )}
+
         {page === "activities" && (
           <motion.div key="activities" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -30 }} transition={{ duration: 0.6 }} style={{ position: "absolute", inset: 0 }}>
-            <ActivitiesPage onBack={() => setPage("eventinfo")} onRsvp={() => setPage("rsvp")} />
+            <ActivitiesPage onBack={() => setPage("weddingrules")} onRsvp={() => setPage("rsvp")} />
           </motion.div>
         )}
         {page === "rsvp" && (
