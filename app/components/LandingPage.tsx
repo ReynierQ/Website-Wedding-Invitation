@@ -46,8 +46,25 @@ export default function LandingPage({ onOpen }: Props) {
           alignItems: "center",
           textAlign: "center",
           padding: 20,
+          width: "100%",
         }}
       >
+        {/* Hashtag */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, delay: 0.05 }}
+          className="hashtag-label"
+          style={{
+            position: "static",
+            marginBottom: 8,
+          }}
+        >
+          <strong>#ALELIE</strong>
+          <em>gallyMarriedto</em>
+          <strong>JOHN</strong>
+        </motion.div>
+
         <motion.h1
           className="landing-title"
           initial={{ opacity: 0, y: 20 }}
@@ -118,13 +135,6 @@ export default function LandingPage({ onOpen }: Props) {
         >
           Unlock the Details
         </motion.p>
-      </div>
-
-      {/* Hashtag */}
-      <div className="hashtag-label">
-        <strong>#ALELIE</strong>
-        <em>gallyMarriedto</em>
-        <strong>JOHN</strong>
       </div>
     </div>
   );
