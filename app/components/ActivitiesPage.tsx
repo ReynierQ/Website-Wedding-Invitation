@@ -232,7 +232,7 @@ export default function ActivitiesPage({ onBack, onRsvp }: Props) {
               border: "1.5px solid var(--deep-red)",
               cursor: "pointer",
               marginTop: -10,
-              marginBottom: 30,
+              marginBottom: 70,
             }}
           >
             ← Back
