@@ -158,10 +158,8 @@ export default function EntourageoPage({ onBack, onNext }: Props) {
                 Ms. Angela Poblete<br />
                 Ms. Thera Tribdino<br />
                 Ms. Jhong Sales<br />
-                Ms. Cristina Bernardo<br />
                 Mrs. Rose Poblete<br />
-                Mrs. Reliza Mellendrez<br />
-                Mrs. Nicole Silong<br />
+                Mrs. Allen Calmada<br />
                 Mrs. Rosie Arayata<br />
                 Mrs. Tessie Silong
               </p>
@@ -234,7 +232,7 @@ export default function EntourageoPage({ onBack, onNext }: Props) {
             {/* Flower Girl */}
             <div>
               <p style={sectionTitle}>Flower Girl</p>
-              <p style={scriptStyle}>Elaijah</p>
+              <p style={scriptStyle}>Jianna</p>
             </div>
 
           </motion.div>
