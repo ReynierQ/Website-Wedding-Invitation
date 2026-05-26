@@ -213,6 +213,7 @@ export default function EntourageoPage({ onBack, onNext }: Props) {
               <p style={scriptStyle}>
                 Mrs. Zarvia Millendrez<br />
                 Mrs. Kristine Tribdino<br />
+                Jewelyn Keith Tagalog<br />
                 Ms. Eliza Dela Pea<br />
                 Ms. Agatha Arayata<br />
                 Ms. Gellanie Sabucor<br />
@@ -220,6 +221,7 @@ export default function EntourageoPage({ onBack, onNext }: Props) {
                 Ms. Coleen Samson<br />
                 Ms. Noreen Tribdino<br />
                 Ms. Cheska Tribdino
+                
               </p>
             </div>
 
