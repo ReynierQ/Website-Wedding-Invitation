@@ -12,7 +12,15 @@ const fadeUp = (delay = 0) => ({
 const scriptStyle: React.CSSProperties = {
   fontFamily: "'Cormorant Garamond', serif",
   fontStyle: "italic",
-  fontSize: "0.95rem",
+  fontSize: "0.85rem",
+  color: "#b8860b",
+  lineHeight: 1.6 ,
+};
+
+const bridesmaidStyle: React.CSSProperties = {
+  fontFamily: "'Cormorant Garamond', serif",
+  fontStyle: "italic",
+  fontSize: "0.80rem",
   color: "#b8860b",
   lineHeight: 1.6 ,
 };
@@ -183,7 +191,7 @@ export default function EntourageoPage({ onBack, onNext }: Props) {
             {/* Maid of Honor */}
             <div>
               <p style={sectionTitle}>Maid of Honor</p>
-              <p style={scriptStyle}>Ms. Algine Mitch Tagalan</p>
+              <p style={bridesmaidStyle}>Ms. Algine Mitch Tagalan</p>
             </div>
 
             {/* Best Man */}
