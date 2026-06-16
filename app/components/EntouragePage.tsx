@@ -200,7 +200,7 @@ export default function EntourageoPage({ onBack, onNext }: Props) {
                 Mr. Royce Millendrez<br />
                 Mr. Darel Torres<br />
                 Mr. Johan Castillo<br />
-                Mr. Nikki Santos<br />
+                Mr. Kian Lance Santos<br />
                 Mr. Joshua Samson<br />
                 Mr. Kenneth Tribdino<br />
                 Mr. Ron Tiglao
@@ -218,9 +218,10 @@ export default function EntourageoPage({ onBack, onNext }: Props) {
                 Ms. Agatha Arayata<br />
                 Ms. Gellanie Sabucor<br />
                 Ms. Aj Praise Tribdino<br />
-                Ms. Coleen Samson<br />
+                Ms. Christine Joy Samson<br />
                 Ms. Noreen Tribdino<br />
-                Ms. Cheska Tribdino
+                Ms. Cheska Tribdino<br />
+                Ms. Anamae Santos
                 
               </p>
             </div>
