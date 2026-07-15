@@ -79,12 +79,12 @@ export default function DressCodePage({ onBack, onNext }: Props) {
 
             {/* PUT BRIDESMAID GROUP IMAGE HERE */}
             <div style={{ position: "relative", width: "100%", height: 140, marginBottom: -8 }}>
-                <Image src="/assets/bridesmaid.png" alt="Bridesmaids" fill style={{ objectFit: "contain" }} />
+                <Image src="/assets/New-bridesmaid.png" alt="Bridesmaids" fill style={{ objectFit: "contain" }} />
             </div>
 
             {/* PUT BRIDESMAID COLOR PALETTE HERE */}
-            <div style={{ position: "relative", width: "100%", height: 70, marginTop: -5, marginBottom: -5 }}>
-                <Image src="/assets/bridesmaid-color-palette.png" alt="Bridesmaid colors" fill style={{ objectFit: "contain" }} />
+            <div style={{ position: "relative", width: "100%", height: 80, marginTop: -5, marginBottom: -5 }}>
+                <Image src="/assets/bridesmaid-color-palette-new.png" alt="Bridesmaid colors" fill style={{ objectFit: "contain" }} />
             </div>
 
             <p style={{
@@ -119,7 +119,7 @@ export default function DressCodePage({ onBack, onNext }: Props) {
             </div>
 
             {/* PUT GROOMSMEN COLOR PALETTE HERE */}
-            <div style={{ position: "relative", width: "100%", height: 80, marginTop: -5, marginBottom: -5 }}>
+            <div style={{ position: "relative", width: "100%", height: 85, marginTop: -5, marginBottom: -5 }}>
                 <Image src="/assets/groomsmen-color-palette.png" alt="Groomsmen colors" fill style={{ objectFit: "contain" }} />
             </div>
 
