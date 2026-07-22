@@ -181,6 +181,7 @@ export default function EntourageoPage({ onBack, onNext }: Props) {
                 Mr. Redentor Villarica<br />
                 Mr. Jerome Castillo<br />
                 Mr. Artcel Tribdino<br />
+                Mr. Leo Bungubung<br />
                 Mr. Joel Basister<br />
                 Mr. Dodie Nitura<br />
                 Mr. Allen Melo<br />
