@@ -12,7 +12,7 @@ const fadeUp = (delay = 0) => ({
 const scriptStyle: React.CSSProperties = {
   fontFamily: "'Cormorant Garamond', serif",
   fontStyle: "italic",
-  fontSize: "0.85rem",
+  fontSize: "0.70rem",
   color: "#b8860b",
   lineHeight: 1.6 ,
 };
@@ -169,7 +169,8 @@ export default function EntourageoPage({ onBack, onNext }: Props) {
                 Mrs. Rose Poblete<br />
                 Mrs. Allen Calmada<br />
                 Mrs. Rosie Arayata<br />
-                Mrs. Tessie Silong
+                Mrs. Tessie Silong<br />
+                Ms. Anjet Samson
               </p>
             </div>
 
@@ -226,7 +227,7 @@ export default function EntourageoPage({ onBack, onNext }: Props) {
                 Ms. Agatha Arayata<br />
                 Ms. Gellanie Sabucor<br />
                 Ms. Aj Praise Tribdino<br />
-                Ms. Christine Joy Samson<br />
+                Ms. Cristian Joy Samson<br />
                 Ms. Noreen Tribdino<br />
                 Ms. Cheska Tribdino<br />
                 Ms. Anamae Santos
