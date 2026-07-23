@@ -186,6 +186,7 @@ export default function EntourageoPage({ onBack, onNext }: Props) {
                 Mr. Dodie Nitura<br />
                 Mr. Allen Melo<br />
                 Mr. Rolly Silong<br />
+                Mr. Silvestre Tribdino<br />
                 Hon. Mervin Viray
               </p>
             </div>
