@@ -170,7 +170,8 @@ export default function EntourageoPage({ onBack, onNext }: Props) {
                 Mrs. Allen Calmada<br />
                 Mrs. Rosie Arayata<br />
                 Mrs. Tessie Silong<br />
-                Ms. Anjet Samson
+                Ms. Anjet Samson<br />
+                Mrs. Baby Samudio
               </p>
             </div>
 
@@ -187,7 +188,8 @@ export default function EntourageoPage({ onBack, onNext }: Props) {
                 Mr. Allen Melo<br />
                 Mr. Rolly Silong<br />
                 Mr. Silvestre Tribdino<br />
-                Hon. Mervin Viray
+                Hon. Mervin Viray<br />
+                Mr. Noel Samudio
               </p>
             </div>
 
@@ -214,7 +216,8 @@ export default function EntourageoPage({ onBack, onNext }: Props) {
                 Mr. Kian Lance Santos<br />
                 Mr. Joshua Samson<br />
                 Mr. Kenneth Tribdino<br />
-                Mr. Ron Tiglao
+                Mr. Ron Tiglao<br />
+                Mr. David Rinen
               </p>
             </div>
 
